@@ -6,12 +6,7 @@ RUN apt-get autoremove
 RUN apt install -y wget
 RUN wget http://ftp.gnu.org/gnu/libc/glibc-2.34.tar.gz && \
     tar -xzf glibc-2.34.tar.gz && \
-    cd glibc-2.34 && \
-    mkdir build && \
-    cd build && \
-    ../configure --prefix=/usr && \
-    make && \
-    make install
+    cd glibc-2.34  
 
 COPY _output/my-echo /my-echo
 
