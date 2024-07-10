@@ -45,3 +45,10 @@ spec:
             name: my-echo
             port: 
               number: 1323
+      - pathType: Prefix
+        path: "/ping"
+        backend:
+          service:
+            name: my-echo
+            port: 
+              number: 1323
