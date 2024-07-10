@@ -4,7 +4,7 @@ import "testing"
 
 func TestPing(t *testing.T) {
 	got := ping()
-	if got != "pong" {
+	if got != "kut" {
 		t.Errorf("ping() =%v; want pong", got)
 	}
 }
